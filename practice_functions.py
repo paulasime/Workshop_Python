@@ -18,8 +18,10 @@ def numar_caractere(text):
  for i in range(len(text)):
    if text[i].islower():
      nr_lower+=1
+   elif test[i].isupper():
+       nr_upper+=1
    else:
-     nr_upper+=1
+     raise Exception
  print(f"Lowercase: {nr_lower}, uppercase: {nr_upper}")
 
 
